@@ -1,0 +1,419 @@
+*{
+    margin: 0px;
+	padding: 0px;
+    box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+html{
+	font-size: 10px;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1{
+	font-size: 1.9rem;
+}
+
+p{
+	font-size: 1.2rem;
+}
+
+body{
+    background: #000000;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+
+    background: #000000;
+    padding: 2em 0 2em 0;
+}
+
+.container{
+	width: 96%;
+	max-width: 117rem;
+	margin: 0 auto;
+}
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	height: 80px;
+	background-color: #080808;
+}
+
+nav .img-logo{
+	float: left;
+	display: flex;
+	align-items: center;
+	width: 70px;
+	height: 70px;
+	margin-top: 5px;
+	margin-left: 1%;
+	background: url(../Icons/Icon-Green.svg)no-repeat center center / cover;;
+}
+
+nav .logo {
+	float: left;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	margin-left: 1%;
+	align-items: center;
+	letter-spacing: 5px;
+	font-size: 24px;
+	color: #009042;
+}
+
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+
+nav .links li {
+	list-style: none;
+}
+
+nav .links a {
+	display: block;
+	padding: 1em;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+
+nav .links a:hover{
+    color: #009042;
+	transition: color .4s ease;
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+
+main{
+	width: 100%;
+	max-width: 160rem;
+    background: #080808;
+    margin: 0 auto;
+	padding: 3rem;
+}
+
+main .profile-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3rem 0;
+}
+
+main .profile-container .profile{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .profile-container .img-container{
+	width: 12rem;
+	height: 12rem;
+	background: url(../Icons/Icon-Green.svg)no-repeat center center / cover;
+	border-radius: 0.5rem;
+}
+
+main .profile-container .profile .text{
+	margin: 0 1rem;
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+main .content p{
+	font-size: 1.5rem;
+	color: white;
+	margin: 1rem 0;
+}
+
+main .content h1{
+	font-size: 3.5rem;
+	font-weight: 600;
+	color: #009042;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: 3rem 0;
+}
+
+main .content h2{
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: #009042;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: 2rem 0;
+}
+.recent-post{
+	height: 100%;
+	width: 100%;
+}
+
+.articles{
+	background-color: #000000;
+	padding: 5rem;
+}
+
+.articles .articles-hading{
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+	position: relative;
+}
+
+.articles .article-heading h5{
+	padding-bottom: 5rem;
+	text-transform: uppercase;
+	width: auto;
+	font-size: 6rem;
+	font-weight: 600;
+	letter-spacing: 5px;
+	position: relative;
+	color: #009042;
+}
+
+.articles .cards-container{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	gap: 5rem;
+	transition: all 0.4s ease;
+}
+
+.articles .cards-container .card-container-one .img-holder{
+	max-width: 100%;
+	height: 24rem;
+	background: url(../Image/Ciclo_di_mercato_settimanale_real.png) no-repeat center center /cover;
+	position: relative;
+}
+
+.articles .cards-container .card-container-two .img-holder{
+	max-width: 100%;
+	height: 24rem;
+	background: url(../Image/Liquidità_interna_esterna.png) no-repeat center center /cover;
+	position: relative;
+}
+
+.articles .cards-container .card-container-three .img-holder{
+	max-width: 100%;
+	height: 24rem;
+	background: url(../Image/Strategia_Asian.png) no-repeat center center /cover;
+	position: relative;
+}
+
+.articles .cards-container .img-holder a{
+	text-transform: uppercase;
+	font-size: 2rem;
+	padding: 0.3rem 1.5rem;
+	display: inline-block;
+	color: white;
+	font-weight: 400;
+	background-color: #080808;
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	transition: all 0.4s ease;
+}
+
+.articles .cards-container .img-holder:hover{
+	transform: translateY(-1rem);
+}
+
+.articles .cards-container .img-holder a:hover{
+	background-color: #009042;
+	color: #000000;
+}
+
+.articles .cards-container .card-text{
+	background-color: #080808;
+	padding: 2rem;
+}
+
+.articles .cards-container .card-text h4{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-bottom: 1rem;
+	color: #009042;
+}
+
+.articles .cards-container .card-text p{
+	font-size: 1.2rem;
+}
+
+footer{
+    position: bottom;
+    background: #080808;
+    padding: 1em 0 1em 0;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social li{
+    margin: 10px 10px;
+}
+
+.social a{
+    text-decoration: none;
+    color: white;
+}
+
+.social a i{
+    font-size: 24px;
+    transition: color .4s ease;
+}
+
+.social a:hover i{
+    color: #009042;
+}
+
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-bottom p{
+	margin: 10px 0px;
+    font-size: 14px;
+
+}
+
+.footer-bottom p i{
+    font-size: 18px;
+    color: #009042;
+}
+
+@media screen and (max-width: 768px) {
+
+
+	nav .logo {
+		float: none;
+		width: auto;
+		font-size: 18px;
+		justify-content: center;
+		padding-right: 12%;
+		letter-spacing: 5px;
+		color: #009042;
+	}
+
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+
+	nav .links a {
+		font-size: 20px;
+	}
+
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+
+	nav .icon-burger {
+		display: block;
+	}
+
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+
+    .main{
+        flex-direction: column;
+    }
+
+    main{
+        padding: 1em 0 1em 0;
+    }
+
+	.articles .cards-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 5rem auto;
+		gap: 5rem;
+		transition: all 0.4s ease;
+	}
+	
+}
